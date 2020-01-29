@@ -174,7 +174,12 @@ export default function AmazonEdit( {
 
 		const image = (
 			<a href={ detailPageUrl }>
-				<img alt={ title } src={ imageUrlSmall } width={ imageWidthSmall } heigth={ imageHeightSmall } />
+				<img
+					alt={ title }
+					src={ imageUrlSmall }
+					width={ imageWidthSmall }
+					heigth={ imageHeightSmall }
+				/>
 			</a>
 		);
 
@@ -196,6 +201,11 @@ export default function AmazonEdit( {
 							{ manufacturer }
 							{ authorshipInfo }
 						</div>
+					) }
+					{ showPurchaseButton && (
+						<Button icon={ icon } isPrimary>
+							{ __( 'Shop Now', 'jetpack' ) }
+						</Button>
 					) }
 				</div>
 			)
