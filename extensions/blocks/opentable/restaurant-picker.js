@@ -26,6 +26,7 @@ export default function RestaurantPicker( props ) {
 	const idRegex = /^(\d+)$|\(\#(\d+)\)$/;
 
 	const onChange = selected => {
+		console.log( selected );
 		const selectedIds = selected.map( restaurant => {
 			const parsed = idRegex.exec( restaurant );
 			const selectedId = parsed[ 1 ] || parsed[ 2 ];

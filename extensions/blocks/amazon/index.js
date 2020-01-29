@@ -6,6 +6,7 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
+import attributes from './attributes';
 import icon from './icon';
 import edit from './edit';
 
@@ -17,6 +18,7 @@ import './editor.scss';
 export const name = 'amazon';
 export const title = __( 'Amazon', 'jetpack' );
 export const settings = {
+	attributes,
 	title,
 	description: __( 'Promote Amazon products and earn a commission from sales.', 'jetpack' ),
 	icon,
